@@ -37,6 +37,7 @@ for my $bin ( keys %{$create} ) {
     copy "$daemon_dir/$bin", "$backup_dir/$create->{$bin}";
 }
 
+# cria o backup
 sub backup_fw {
     my ( $fwb, $fw, $versao ) = @_;
 
